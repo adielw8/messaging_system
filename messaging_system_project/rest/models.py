@@ -9,7 +9,6 @@ class Message(models.Model):
     message = models.CharField(max_length=500, default='Message (maximum 500 characters)')
     subject = models.CharField(max_length=30, default='Subject (maximum 30 characters)')
     creation_date = models.DateField(auto_now_add=True)
+    read = models.BooleanField(default=False)
 
-    def __str__(self):
-        return self.message
 
