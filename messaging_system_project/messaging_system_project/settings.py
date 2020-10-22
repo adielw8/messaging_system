@@ -25,7 +25,7 @@ SECRET_KEY = '(=t1-^f5z#2*=x%n-ycyj=n84q0*d*-hseb96o5g-j+h8$^h@y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['ec2-18-189-20-151.us-east-2.compute.amazonaws.com', 'adielw8messagingsystem.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
