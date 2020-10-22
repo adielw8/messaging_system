@@ -1,7 +1,7 @@
 # Messaging_system
  
 
-## usage
+## postman usage
 
 run postman
 
