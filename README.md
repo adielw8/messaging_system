@@ -1,33 +1,41 @@
-# messaging_system
+# Messaging_system
+ 
+### Installation
 
-# install
+Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
 
+Install the dependencies and devDependencies and start the server.
 
+```sh
+$ cd dillinger
+$ npm install -d
+$ node app
+```
 
-# usage.
-In postman
+For production environments...
 
-* Write message:
+```sh
+$ npm install --production
+$ NODE_ENV=production node app
+```
 
+### usage
+
+run postman
+
+#### Write message
 Change the method to POST, in the url pase the link "http://127.0.0.1:8000/create/"
 
-in "params" tab set 
-
+###### in "params" tab set 
 key: Content-Type 
-
 value: application/json
-
-in "Authorazation" set
-
+###### in "Authorazation" set
 type: Basic Auth
-
 (admin)
-
 Username: adi
-
 password: adi123456
 
-set the Body field as folow:
+###### set the Body field as folow:
 
 {
     "sender": "1",
@@ -36,32 +44,23 @@ set the Body field as folow:
     "subject": "{Subject (maximum 30 characters)}"
 }
 
-* Get all messages for a specific receiver:
+#### Get all messages for a specific receiver:
+http://127.0.0.1:8000/users/messages/{Receiver_id}
+http://127.0.0.1:8000/messages/?receiver={Receive_id}
 
-http://127.0.0.1:8000/users/messages/{Receiver id}/
+#### Get all unread message for specific receiver:
+http://127.0.0.1:8000/messages/?receiver={Receive_id}&unread=True 
 
-http://127.0.0.1:8000/messages/?receiver={Receive id}
-
-
-* Get all unread message for specific receiver:
-
-http://127.0.0.1:8000/messages/?receiver={Receive id}&unread=True 
-
-
-* Delete message:
-
-http://127.0.0.1:8000/{Message id}/delete/
-
+#### Delete message:
+http://127.0.0.1:8000/{Message_id}/delete/
 Change the method to Delete
 
-in "Authorazation" set
-
+##### in "Authorazation" set
 type: Basic Auth
 
 (admin)
 Username: adi
 password: adi123456
-
 
 
 
