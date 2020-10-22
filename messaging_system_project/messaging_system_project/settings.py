@@ -25,7 +25,7 @@ SECRET_KEY = '(=t1-^f5z#2*=x%n-ycyj=n84q0*d*-hseb96o5g-j+h8$^h@y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['adielw8messagingsystem.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,6 +125,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-DISABLE_COLLECTSTATIC = 1
 
 STATIC_URL = '/static/'
