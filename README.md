@@ -1,29 +1,11 @@
 # Messaging_system
  
-### Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
-
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
-
-### usage
+## usage
 
 run postman
 
-#### Write message
+###### Write message
 Change the method to POST, in the url pase the link "http://127.0.0.1:8000/create/"
 
 ###### in "params" tab set 
