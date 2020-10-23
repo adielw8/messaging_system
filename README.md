@@ -17,7 +17,7 @@ password: adi123456
 ```
 Change the method to POST, in the URL paste the link "http://ec2-3-19-79-145.us-east-2.compute.amazonaws.com:8000/create/"
 ```
-###### in the "params" tab set 
+###### in the "Headers" tab set 
 ```
 key: Content-Type 
 value: application/json
