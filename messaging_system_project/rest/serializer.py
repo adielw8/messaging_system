@@ -11,8 +11,14 @@ class UserSerializer(HyperlinkedModelSerializer):
 
 
 # Serialized Message
-class MessageSerializer(ModelSerializer):
+class MessageSerializer(HyperlinkedModelSerializer):
 
     class Meta:
         model = Message
         fields = ['id', 'sender', 'receiver', 'message', 'subject', 'creation_date', 'read']
+
+
+class CreateMessageSerializer(ModelSerializer):
+    class Meta:
+        model = Message
+        fields = ['sender', 'receiver', 'message', 'subject']
